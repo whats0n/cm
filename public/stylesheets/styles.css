@@ -1,0 +1,307 @@
+html {
+  overflow: auto !important;
+  font-size: 16px !important;
+}
+
+.layout-main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .layout-main {
+    display: block;
+    height: auto;
+    min-height: 1px;
+  }
+}
+
+/*begin footer*/
+.footer {
+  flex: 0 0 auto;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.footer:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer__controls {
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: -0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .footer__controls {
+    float: none;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer__controls {
+    flex-direction: column;
+  }
+}
+
+.footer__control {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 420px) {
+  .footer__control {
+    text-align: center;
+  }
+
+  .footer__control .button {
+    width: 100%;
+  }
+}
+
+.footer__title {
+  float: left;
+  padding: 6px 0.5rem 6px 0;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .footer__title {
+    float: none;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer__title {
+    font-size: 0.75rem;
+  }
+}
+/*end footer*/
+
+/*begin main-content*/
+.main-content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content {
+    display: block;
+  }
+}
+
+.main-content__column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content__column {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
+.main-content__column:not(:first-child) {
+  border-left: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content__column:not(:first-child) {
+    border-top: 1px solid #ccc;
+    border-left: none;
+  }
+}
+
+.main-content__column_scroll {
+  overflow: auto;
+}
+
+.main-content__header,
+.main-content__footer, {
+  flex: 0 0 auto;
+}
+
+.main-content__header {
+  padding: 0.5rem;
+  background: #fafafa;
+}
+
+.main-content__header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main-content__header-in {
+  float: right;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 420px) {
+  .main-content__header-in {
+    float: none;
+    width: 100%;
+  }
+
+  .main-content__header-in .select,
+  .main-content__header-in select,
+  .main-content__header-in .file > .file-label,
+  .main-content__header-in .file-cta {
+    width: 100%;
+  }
+
+  .main-content__header-in .file > .file-label,
+  .main-content__header-in .file-cta {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.main-content__header-in_column {
+  width: 160px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content__header-in_column {
+    width: 100%;
+  }
+
+  .main-content__header-in_column select,
+  .main-content__header-in_column .select {
+    width: 100%;
+  }
+}
+
+.main-content__table {
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content__table {
+    height: 400px;
+  }
+}
+
+.main-content__editor,
+.main-content__footer {
+  border: none !important;
+}
+
+.main-content__editor .cke {
+  border: none !important;
+}
+/*end main-content*/
+
+/*begin table-controls*/
+.table-controls {
+  padding: 0.5rem;
+}
+
+.table-controls:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.table-controls__primary,
+.table-controls__secondary {
+  font-size: 0;
+}
+
+.table-controls__primary .button,
+.table-controls__secondary .button {
+  margin: 0.5rem;
+}
+
+.table-controls__primary {
+  float: right;
+}
+
+.table-controls__secondary {
+  float: left;
+}
+
+@media screen and (max-width: 550px) {
+  .table-controls__primary,
+  .table-controls__secondary {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .table-controls__primary .button,
+  .table-controls__secondary .button {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+}
+
+/*end table-controls*/
+
+/*begin field*/
+.field {
+  margin: 0 !important;
+  font-size: 1rem;
+}
+
+.field__label {
+  display: block;
+  font-size: 0.75rem;
+}
+/*end field*/
+
+/*begin grid*/
+.grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 0.75rem 0.5rem;
+  border: none !important;
+  border-top: 1px solid #ccc !important;
+}
+
+.grid__field {
+  flex: 1 1 25%;
+  padding: 0.25rem 0.5rem;
+}
+
+@media screen and (max-width: 560px) {
+  .grid__field {
+    flex-basis: 33.33%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid__field {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .grid__field {
+    flex-basis: 100%;
+  }
+}
+/*end grid*/
+
+.file-icon-in {
+  width: 1rem;
+  height: 1rem;
+}
+
+.file-label {
+  margin: 0 !important;
+}

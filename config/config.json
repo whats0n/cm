@@ -1,0 +1,26 @@
+{
+  "development": {
+    "database": "latexdb",
+    "username": "root",
+    "password": "root",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "secret": "a2123325235234"
+  },
+  "test": {
+    "database": "latexdb",
+    "username": "root",
+    "password": "root",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "secret": "a2123325235234"
+  },
+  "production": {
+    "database": "latexdb",
+    "username": "root",
+    "password": "root",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "secret": "a2123325235234"
+  }
+}

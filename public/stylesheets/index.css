@@ -1,0 +1,100 @@
+.top-btns {
+	height: 5vh;
+}
+.left-btns {
+	float: left;
+}
+.right-btns {
+	float: right;
+}
+#uploadExcelUI {
+	/*border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 7px 2px;*/
+}
+.main-component {
+	display: inline-block;
+	border: solid grey 1px;
+}
+.left-component {
+	margin: 1vw;
+	width: 45vw;
+	height: 80vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: solid grey 1px;
+	float: left;
+}
+.table-header, .table-body {
+	width: 100%;
+}
+.table-header div, .table-body .row div {
+	float:left;
+}
+.table-header div:nth-child(1) {
+	width: 10%;
+}
+.table-header div:nth-child(2) {
+	width: 50%;
+}
+.table-header div:nth-child(3) {
+	width: 20%;
+}
+.table-header div:nth-child(4) {
+	width: 20%;
+}
+.table-header {
+	display: inline-block;
+}
+.table-body .row {
+	display: block;
+    height: 18px;
+}
+.table-body .row div:nth-child(1) {
+	width: 10%;
+}
+.table-body .row div:nth-child(2) {
+	width: 50%;
+}
+.table-body .row div:nth-child(3) {
+	width: 20%;
+}
+.table-body .row div:nth-child(4) {
+	width: 20%;
+}
+
+.table-body .active {
+	border: solid red 1px;
+}
+.right-component {
+	margin: 1vw;
+	width: 45vw;
+	height: 80vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: solid grey 1px;
+	float: left;
+}
+
+.text-editor {
+	border: solid grey 1px;
+}
+.text-editor textarea {
+	width: 100%;
+	height: 100%;
+}
+#inputColumns {
+	display: inline-block;
+	border: solid grey 1px;
+}
+.tag {
+	padding: 10px;
+	display: inline-block;
+}
+.tag .tagInput {
+	display: inline-block;
+}
+.tag .tagInput input {
+	width: 100px;
+}
